@@ -1,0 +1,12 @@
+.root {
+  color: white;
+  border: 5px double white;
+  border-radius: 10px;
+  margin: 8px;
+  padding: 8px;
+  background-color: rgb(77, 77, 66);
+}
+
+.small {
+  font-size: small;
+}

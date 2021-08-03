@@ -1,0 +1,62 @@
+{
+  "presentacion": "Me llamo Hernán Porfirio.\nMe gusta y siempre estoy dispuesto a aprender cosas nuevas, y\naplicar mis conocimientos y experiencias para mejorar y optimizar\ncualquier tarea que me toque desempeñar.\nEn mi visión, las herramientas tecnológicas siempre deben estar al\nservicio de las personas.\nSiempre teniendo esto presente, me inspira buscar formas de hacer\nlos procesos mas óptimos y eficientes.\nTengo conocimientos en software y hardware de Audio y\nactualmente estoy orientado al Desarrollo Web.",
+  "experiencia": [
+    [
+      "Boxful Subscription Engine",
+      "Customer Success Manager",
+      ["Onboarding de Clientes, Tareas de Administración", "Captación de Potenciales clientes", "Capacitaciones", "Demostraciones de producto"],
+      "septiembre de 2020 - Present"
+    ],
+    [
+      "Sofitel Buenos Aires Recoleta",
+      "Eventos en alimentos y bebidas",
+      ["Operación de eventos", "Organización"],
+      "marzo de 2019 - marzo de 2020"
+    ],
+    [
+      "Autónomo",
+      "Operador Técnico Eventos Audio Visuales",
+      ["Operación y armado de técnica Audiovisual para eventos"],
+      "marzo de 2017 - septiembre de 2019"
+    ],
+    [
+      "DIRECTV Latin America",
+      "Operador de servicios de atención al cliente",
+      ["Customer ServiceSector de retención de señales y paquetes de programación","Sector de ventas de programación de señales adicionales para servicio de\ntelevisión satelital","Sector de cobranzas", "Chat","Atención a clientes a través de plataforma de Chat y Mail"],
+      "noviembre de 2010 - octubre de 2018"
+    ],
+    [
+      "Atento Argentina",
+      "Back Office administrativo",
+      ["Back Office administrativo de ventas de Internet de banda ancha","Data Entry","Control de calidad", "Atención de reclamos y soporte técnico" , "Manejo administrativo y backups de grabaciones telefónicas y monitoreos"],
+      "diciembre de 2006 - noviembre de 2010"
+    ]
+  ],
+  "estudios": [
+    [
+      "EducaciónIT",
+      "React",["Desarrollo de aplicaciones web","React Router, Components, Hooks, Redux"],
+      "mayo de 2021 - julio de 2021"
+    ],
+    [
+      "EducacionIT",
+      "Curso de Javascript Desarrollador Avanzado Front-End",["Apis","Objects","Arrays","Iteration","SPA"],
+      "2020 - 2020"
+    ],
+    [
+      "EducacionIT",
+      "Seminario De Programacion Web",["Desarrollo de páginas web", "Contenido digital", "Multimedia", "Recursos informáticos"],
+      "2020 - 2020"
+    ],
+    [
+      "Escuela Tecson",
+      "Operación de Grabación y Post-Producción de Audio, Técnico de grabación\nde sonido",["Consolas analógicas y digitales", "Efectos espaciales y dinámicos", "Grabación","Mezcla","Post-Producción"],
+      "2013 - 2017"
+    ],
+    [
+      "freeCodeCamp",
+      "Responsive Web Design",["HTML","CSS","SASS","ES6","Bootstrap" ],
+      "2019 - 2019"
+    ]
+  ]
+}

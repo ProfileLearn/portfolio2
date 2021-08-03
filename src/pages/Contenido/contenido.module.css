@@ -1,0 +1,11 @@
+.root {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 576px) {
+  .root {
+    flex-direction: column;
+  }
+}
