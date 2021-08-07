@@ -35,12 +35,16 @@ const useStyles = makeStyles((theme) => ({
     zIndex: 0
   },
   drawerPaper: {
-    width: drawerWidth,
+    width: "230px",
     backgroundColor: 'rgb(30 38 41)',
     color: 'white'
   },
   listas: {
-    backgroundColor: theme.palette.primary.dark, borderRadius: '10px', zIndex: 1
+    backgroundColor: theme.palette.primary.dark, 
+    // border: "8px solid rgb(30 38 41)",
+    marginLeft: "8px",
+    borderRadius: '10px', 
+    zIndex: 1
   }
 }));
 

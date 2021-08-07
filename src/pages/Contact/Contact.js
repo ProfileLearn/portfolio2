@@ -7,13 +7,25 @@ import linkedin from '../../images/linkedin.png'
 import style from './contact.module.css'
 
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <div className={style.root}>
-      <ContactCard image={wpp} title="Whatsapp" />
-      <ContactCard image={email} title="Email" />
-      <ContactCard image={git} title="Github" />
-      <ContactCard image={linkedin} title="Linkedin" />
+      <a href={props.wpp} target="_blank" rel="noreferrer">
+        <ContactCard image={wpp} title="Whatsapp" />
+
+      </a>
+      <a href={props.mail} target="_blank" rel="noreferrer" >
+        <ContactCard image={email} title="Email" />
+
+      </a>
+      <a href={props.git} target="_blank" rel="noreferrer">
+        <ContactCard image={git} title="Github" />
+
+      </a>
+      <a href={props.lin} >
+        <ContactCard image={linkedin} title="Linkedin" />
+
+      </a>
 
     </div>
   )
