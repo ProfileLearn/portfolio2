@@ -22,7 +22,7 @@ const Contact = (props) => {
         <ContactCard image={git} title="Github" />
 
       </a>
-      <a href={props.lin} >
+      <a href={props.lin} target="_blank" rel="noreferrer" >
         <ContactCard image={linkedin} title="Linkedin" />
 
       </a>
