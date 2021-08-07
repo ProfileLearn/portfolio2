@@ -7,14 +7,15 @@
   background-color: rgb(77, 77, 66);
   width: 370px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
 
 .img {
   width: auto;
-  max-width: 350px;
+  max-width: 370px;
   object-fit: contain;
   border-radius: 20px;
+  height: auto;
 }

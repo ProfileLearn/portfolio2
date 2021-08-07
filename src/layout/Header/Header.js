@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
       marginRight: theme.spacing(1)
     },
     borderRadius: '10px',
-    backgroundColor: theme.palette.primary.dark,
+    backgroundColor: theme.palette.primary.main,
   },
   menuButton: {
     marginRight: theme.spacing(2),

@@ -32,7 +32,8 @@ const useStyles = makeStyles((theme) => ({
   toolbar: {
     ...theme.mixins.toolbar,
     backgroundColor: 'rgb(30 38 41)',
-    zIndex: 0
+    zIndex: 0,
+    marginTop: theme.spacing(1)
   },
   drawerPaper: {
     width: "230px",
@@ -40,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'white'
   },
   listas: {
-    backgroundColor: theme.palette.primary.dark, 
+    backgroundColor: theme.palette.primary.main, 
     // border: "8px solid rgb(30 38 41)",
     marginLeft: "8px",
     borderRadius: '10px', 
