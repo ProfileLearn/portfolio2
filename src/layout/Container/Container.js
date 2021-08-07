@@ -39,7 +39,7 @@ const Container = () => {
   return (
     <BrowserRouter>
       <Header onClick={handleDrawerToggle} />
-      <Cajon open={mobileOpen} onClose={handleDrawerToggle} />
+      <Cajon onClick={handleDrawerToggle} open={mobileOpen} onClose={handleDrawerToggle} />
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <Switch>
