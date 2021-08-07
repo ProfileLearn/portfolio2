@@ -11,6 +11,9 @@ const useStyles = makeStyles({
     backgroundColor: 'rgb(77, 77, 66)',
     color: 'white'
   },
+  anchor: {
+    color: "white"
+  },
   bullet: {
     display: 'inline-block',
     margin: '0 2px',
@@ -34,7 +37,9 @@ export default function OutlinedCard(props) {
     <Card variant="outlined" className={classes.root}>
       <CardContent>
         <Typography className={classes.pos}  gutterBottom>
+          <a target="	_blank" className={classes.anchor} href={props.info[4] ? props.info[4]: null}>
           {props.info[0]}
+          </a>  
         </Typography>
         <Typography className={classes.pos} >
           {props.info[1]}

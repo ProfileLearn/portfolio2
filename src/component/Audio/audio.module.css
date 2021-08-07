@@ -4,7 +4,9 @@
   border-radius: 10px;
   margin: 8px;
   padding: 8px;
+  padding-left: 16px;
   background-color: rgb(77, 77, 66);
+  min-width: 370px;
 }
 
 .small {

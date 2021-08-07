@@ -1,0 +1,8 @@
+.root {
+  padding: 8px;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-wrap: wrap;
+  min-height: 300px;
+}
