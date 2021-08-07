@@ -53,7 +53,7 @@ const Cajon = (props) => {
   const classes = useStyles();
 
   return (
-    <nav onClick={props.onClick} className={classes.drawer} aria-label="mailbox folders">
+    <nav className={classes.drawer} aria-label="mailbox folders">
       {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
       <Hidden smUp implementation="css">
         <Drawer
@@ -63,6 +63,7 @@ const Cajon = (props) => {
           classes={{
             paper: classes.drawerPaper,
           }}
+          onClick={props.onClick}
           ModalProps={{
             keepMounted: true, // Better open performance on mobile.
           }}
