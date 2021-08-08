@@ -15,6 +15,7 @@ export default class AppContainer extends React.Component {
       color: "black",
       counter: 3,
       speed: 1000,
+      fullscreen: false
     };
   }
 
@@ -42,12 +43,14 @@ export default class AppContainer extends React.Component {
 
   toggleFullScreen = () => {
     const elem = document.getElementById("appContainer");
-    if (!elem.fullscreenElement) {
+    if (!this.state.fullscreen) {
+      this.setState({fullscreen: true})
       elem.requestFullscreen();
 
     } else {
-      if (elem.exitFullscreen) {
-        elem.exitFullscreen();
+      if (this.state.fullscreen) {
+        this.setState({ fullscreen: false })
+        document.exitFullscreen();
 
       }
     }
@@ -78,6 +81,8 @@ export default class AppContainer extends React.Component {
     }, speed);
   }
 
+  
+
   render() {
     return (
       <div className={styles.root} id="appContainer">
@@ -93,6 +98,7 @@ export default class AppContainer extends React.Component {
           onStopClick={this.handleClick}
           onChange={this.handleChange}
           onFullClick={this.toggleFullScreen}
+          fullscreen={this.state.fullscreen}
           speed={this.state.speed}
         />
         

@@ -18,11 +18,11 @@ const Controls = (props) => {
         <Stop onClick={props.onStopClick} />
       </Hidden>
       <Speed onChange={props.onChange} speed={props.speed} />
-      <Hidden xsUp={document.fullscreenElement}>
-        <IconButton>
-          <FullscreenIcon onClick={props.onFullClick} />
-        </IconButton>
-      </Hidden>
+
+      <IconButton onClick={props.onFullClick}>
+        <FullscreenIcon />
+      </IconButton>
+
     </div>
   )
 }
