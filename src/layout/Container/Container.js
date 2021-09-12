@@ -44,6 +44,7 @@ const Container = () => {
         <div className={classes.toolbar} />
         <Switch>
           <Route path="/" exact render={() => <SobreMi info={info} />} />
+          <Route path="/portfolio2" render={() => <SobreMi info={info} />} />
           <Route path="/experiencia" render={() => <Experiencia info={info.experiencia} />} />
           <Route path="/estudios" render={() => <Estudios info={info.estudios} />} />
           <Route path="/potencial-adquirido" render={() => <Potencial info={info.potencial} />} />
