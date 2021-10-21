@@ -41,7 +41,7 @@ const useStyles = makeStyles((theme) => ({
     color: 'white'
   },
   listas: {
-    backgroundColor: theme.palette.primary.main, 
+    backgroundColor: theme.palette.primary.dark, 
     // border: "8px solid rgb(30 38 41)",
     marginLeft: "8px",
     marginRight: "4px",

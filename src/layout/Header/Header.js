@@ -19,7 +19,7 @@ const useStyles = makeStyles((theme) => ({
       marginRight: theme.spacing(1)
     },
     borderRadius: '10px',
-    backgroundColor: theme.palette.primary.main,
+    backgroundColor: theme.palette.primary.dark,
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -39,7 +39,7 @@ const Header = (props) => {
   return (
     <>
       <AppBar position="fixed" className={classes.appBar}>
-        <Toolbar > 
+        <Toolbar >
           <IconButton
             color="inherit"
             aria-label="open drawer"
