@@ -15,7 +15,7 @@ import HomeIcon from '@material-ui/icons/Home';
 import LibraryBooksIcon from '@material-ui/icons/LibraryBooks';
 import StarOutlineIcon from '@material-ui/icons/StarOutline';
 import PermMediaIcon from '@material-ui/icons/PermMedia';
-
+import img from "../../images/perfil.jpeg"
 
 const drawerWidth = 240;
 
@@ -41,13 +41,20 @@ const useStyles = makeStyles((theme) => ({
     color: 'white'
   },
   listas: {
-    backgroundColor: theme.palette.primary.dark, 
+    backgroundColor: theme.palette.primary.dark,
     // border: "8px solid rgb(30 38 41)",
     marginLeft: "8px",
     marginRight: "4px",
-    borderRadius: '10px', 
+    borderRadius: '10px',
     zIndex: 1
-  }
+  },
+  img: {
+    width: "200px",
+    height: "auto",
+    borderRadius: "50%",
+    margin: theme.spacing(2)
+  } 
+
 }));
 
 const Cajon = (props) => {
@@ -55,147 +62,150 @@ const Cajon = (props) => {
   const classes = useStyles();
 
   return (
-    <nav className={classes.drawer} aria-label="mailbox folders">
-      {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-      <Hidden smUp implementation="css">
-        <Drawer
-          variant="temporary"
-          open={props.open}
-          onClose={props.onClose}
-          classes={{
-            paper: classes.drawerPaper,
-          }}
-          onClick={props.onClick}
-          ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
-          }}
-        >
-          <div>
-            <div className={classes.toolbar} />
-            <div className={classes.listas} >
+    <>
+      <nav className={classes.drawer} aria-label="mailbox folders">
+        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+        <Hidden smUp implementation="css">
+          <Drawer
+            variant="temporary"
+            open={props.open}
+            onClose={props.onClose}
+            classes={{
+              paper: classes.drawerPaper,
+            }}
+            onClick={props.onClick}
+            ModalProps={{
+              keepMounted: true, // Better open performance on mobile.
+            }}
+          >
+            <div>
+              <div className={classes.toolbar} />
+              <div className={classes.listas} >
 
-              <List component="nav" aria-label="main">
-                <ListItem button component={Link} to="/">
-                  <ListItemIcon>
-                    <HomeIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="Sobre Mí" />
-                </ListItem>
-                <Divider light />
-                <ListItem button component={Link} to="/experiencia">
-                  <ListItemIcon>
-                    <BookIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="Experiencia" />
-                </ListItem>
-                <Divider light />
-                <ListItem button component={Link} to="/estudios">
-                  <ListItemIcon>
-                    <LibraryBooksIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="Estudios" />
-                </ListItem>
-                <Divider light />
-                <ListItem button component={Link} to="/potencial-adquirido">
-                  <ListItemIcon>
-                    <StarOutlineIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="Potencial Adquirido" />
-                </ListItem>
-                <Divider light />
-                <ListItem button component={Link} to="/contenido">
-                  <ListItemIcon>
-                    <PermMediaIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="Contenido" />
-                </ListItem>
-                <Divider light />
-                <ListItem button component={Link} to="/app">
-                  <ListItemIcon>
-                    <AppsIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="App" />
-                </ListItem>
-                <Divider light />
-                <ListItem button component={Link} to="/contacto">
-                  <ListItemIcon>
-                    <InboxIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="Contacto" />
-                </ListItem>
-                <Divider />
-              </List>
+                <List component="nav" aria-label="main">
+                  <ListItem button component={Link} to="/">
+                    <ListItemIcon>
+                      <HomeIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="Sobre Mí" />
+                  </ListItem>
+                  <Divider light />
+                  <ListItem button component={Link} to="/experiencia">
+                    <ListItemIcon>
+                      <BookIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="Experiencia" />
+                  </ListItem>
+                  <Divider light />
+                  <ListItem button component={Link} to="/estudios">
+                    <ListItemIcon>
+                      <LibraryBooksIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="Estudios" />
+                  </ListItem>
+                  <Divider light />
+                  <ListItem button component={Link} to="/potencial-adquirido">
+                    <ListItemIcon>
+                      <StarOutlineIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="Potencial Adquirido" />
+                  </ListItem>
+                  <Divider light />
+                  <ListItem button component={Link} to="/contenido">
+                    <ListItemIcon>
+                      <PermMediaIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="Contenido" />
+                  </ListItem>
+                  <Divider light />
+                  <ListItem button component={Link} to="/app">
+                    <ListItemIcon>
+                      <AppsIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="App" />
+                  </ListItem>
+                  <Divider light />
+                  <ListItem button component={Link} to="/contacto">
+                    <ListItemIcon>
+                      <InboxIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="Contacto" />
+                  </ListItem>
+                  <Divider />
+                </List>
+              </div>
             </div>
-          </div>
-        </Drawer>
-      </Hidden>
-      <Hidden xsDown implementation="css">
-        <Drawer
-          classes={{
-            paper: classes.drawerPaper,
-          }}
-          variant="permanent"
-          open
-        >
-          <div>
-            <div className={classes.toolbar} />
-            <div className={classes.listas} >
+          </Drawer>
+        </Hidden>
+        <Hidden xsDown implementation="css">
+          <Drawer
+            classes={{
+              paper: classes.drawerPaper,
+            }}
+            variant="permanent"
+            open
+          >
+            <div>
+              <img className={classes.img} src={img} alt="" />
+{/*               <div className={classes.toolbar} />
+ */}              <div className={classes.listas} >
 
-              <List component="nav" aria-label="main">
-                <ListItem button component={Link} to="/">
-                  <ListItemIcon>
-                    <HomeIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="Sobre Mí" />
-                </ListItem>
-                <Divider light />
-                <ListItem button component={Link} to="/experiencia">
-                  <ListItemIcon>
-                    <BookIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="Experiencia" />
-                </ListItem>
-                <Divider light />
-                <ListItem button component={Link} to="/estudios">
-                  <ListItemIcon>
-                    <LibraryBooksIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="Estudios" />
-                </ListItem>
-                <Divider light />
-                <ListItem button component={Link} to="/potencial-adquirido">
-                  <ListItemIcon>
-                    <StarOutlineIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="Potencial Adquirido" />
-                </ListItem>
-                <Divider light />
-                <ListItem button component={Link} to="/contenido">
-                  <ListItemIcon>
-                    <PermMediaIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="Contenido" />
-                </ListItem>
-                <Divider light />
-                <ListItem button component={Link} to="/app">
-                  <ListItemIcon>
-                    <AppsIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="App" />
-                </ListItem>
-                <Divider light />
-                <ListItem button component={Link} to="/contacto">
-                  <ListItemIcon>
-                    <InboxIcon color="" />
-                  </ListItemIcon>
-                  <ListItemText primary="Contacto" />
-                </ListItem>
-              </List>
+                <List component="nav" aria-label="main">
+                  <ListItem button component={Link} to="/">
+                    <ListItemIcon>
+                      <HomeIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="Sobre Mí" />
+                  </ListItem>
+                  <Divider light />
+                  <ListItem button component={Link} to="/experiencia">
+                    <ListItemIcon>
+                      <BookIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="Experiencia" />
+                  </ListItem>
+                  <Divider light />
+                  <ListItem button component={Link} to="/estudios">
+                    <ListItemIcon>
+                      <LibraryBooksIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="Estudios" />
+                  </ListItem>
+                  <Divider light />
+                  <ListItem button component={Link} to="/potencial-adquirido">
+                    <ListItemIcon>
+                      <StarOutlineIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="Potencial Adquirido" />
+                  </ListItem>
+                  <Divider light />
+                  <ListItem button component={Link} to="/contenido">
+                    <ListItemIcon>
+                      <PermMediaIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="Contenido" />
+                  </ListItem>
+                  <Divider light />
+                  <ListItem button component={Link} to="/app">
+                    <ListItemIcon>
+                      <AppsIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="App" />
+                  </ListItem>
+                  <Divider light />
+                  <ListItem button component={Link} to="/contacto">
+                    <ListItemIcon>
+                      <InboxIcon color="" />
+                    </ListItemIcon>
+                    <ListItemText primary="Contacto" />
+                  </ListItem>
+                </List>
+              </div>
             </div>
-          </div>
-        </Drawer>
-      </Hidden>
-    </nav>
+          </Drawer>
+        </Hidden>
+      </nav>
+    </>
   )
 }
 

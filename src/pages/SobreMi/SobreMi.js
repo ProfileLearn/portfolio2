@@ -6,9 +6,15 @@ const SobreMi = (props) => {
 
   return (
 
-      <div className={style.root}>
-        {props.info.presentacion}
-      </div>
+    <div className={style.root}>
+      {props.info.presentacion.map(e => {
+        return (<>
+          {e}
+          <br />
+        </>)
+      })}
+      <br />
+    </div>
 
 
   )
