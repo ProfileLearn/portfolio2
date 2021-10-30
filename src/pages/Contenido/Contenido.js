@@ -18,7 +18,7 @@ const Contenido = () => {
     <div className = {style.root}>
       <ContenidoCard imgSrc={img2} href="https://profilelearn.github.io/interescompuestobs4/" title="Calculadora de intereses compuestos" />
       <ContenidoCard imgSrc={img3} href="https://profilelearn.github.io/app_enfoque/" title="MindGame" />
-      <ContenidoCard imgSrc={sliderImg} href="https://profilelearn.github.io/portrait-3/" title="Portaretratos Digital" />
+      <ContenidoCard imgSrc={sliderImg} href="https://profilelearn.github.io/portrait-4/" title="Portaretratos Digital" />
 
       <Audio mp3={silverHawks} image={img} title="Silverhawks" subtitle="Hernan Porfirio" description="ejecutado, grabado y mezclado" author="Hernan Porfirio" age="2012" />
       <Audio mp3={yoLosConozco} image={img} title="Yo los conozco" subtitle="Salma" description="grabado y mezclado" author="Hernán Porfirio" age="2017" />
