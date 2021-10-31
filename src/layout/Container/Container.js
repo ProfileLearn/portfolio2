@@ -44,7 +44,6 @@ const Container = () => {
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <Switch>
-          <Route path="/" exact render={() => <SobreMi info={info} />} />
           <Route path="/portfolio2" render={() => <SobreMi info={info} />} />
           <Route path="/experiencia" render={() => <Experiencia info={info.experiencia} />} />
           <Route path="/estudios" render={() => <Estudios info={info.estudios} />} />
@@ -55,7 +54,10 @@ const Container = () => {
             lin="https://www.linkedin.com/in/atilio-hernan-porfirio/"
             git="https://github.com/ProfileLearn"
             wpp="https://wa.me/541136260524"
-            mail="mailto:hernanporfirio@gmail.com" />} />
+            mail="mailto:hernanporfirio@gmail.com"
+          />} />
+          <Route path="/" render={() => <SobreMi
+            info={info} />} />
         </Switch>
       </main>
     </BrowserRouter>
