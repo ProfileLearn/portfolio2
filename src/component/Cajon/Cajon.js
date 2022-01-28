@@ -83,49 +83,49 @@ const Cajon = (props) => {
               <div className={classes.listas} >
 
                 <List component="nav" aria-label="main">
-                  <ListItem button component={Link} to="/">
+                  <ListItem button component={Link} to="/portfolio2/">
                     <ListItemIcon>
                       <HomeIcon color="" />
                     </ListItemIcon>
                     <ListItemText primary="Sobre Mí" />
                   </ListItem>
                   <Divider light />
-                  <ListItem button component={Link} to="/experiencia">
+                  <ListItem button component={Link} to="/portfolio2/experiencia">
                     <ListItemIcon>
                       <BookIcon color="" />
                     </ListItemIcon>
                     <ListItemText primary="Experiencia" />
                   </ListItem>
                   <Divider light />
-                  <ListItem button component={Link} to="/estudios">
+                  <ListItem button component={Link} to="/portfolio2/estudios">
                     <ListItemIcon>
                       <LibraryBooksIcon color="" />
                     </ListItemIcon>
                     <ListItemText primary="Estudios" />
                   </ListItem>
                   <Divider light />
-                  <ListItem button component={Link} to="/potencial-adquirido">
+                  <ListItem button component={Link} to="/portfolio2/potencial-adquirido">
                     <ListItemIcon>
                       <StarOutlineIcon color="" />
                     </ListItemIcon>
                     <ListItemText primary="Potencial Adquirido" />
                   </ListItem>
                   <Divider light />
-                  <ListItem button component={Link} to="/contenido">
+                  <ListItem button component={Link} to="/portfolio2/contenido">
                     <ListItemIcon>
                       <PermMediaIcon color="" />
                     </ListItemIcon>
                     <ListItemText primary="Contenido" />
                   </ListItem>
                   <Divider light />
-                  <ListItem button component={Link} to="/app">
+                  <ListItem button component={Link} to="/portfolio2/app">
                     <ListItemIcon>
                       <AppsIcon color="" />
                     </ListItemIcon>
                     <ListItemText primary="App" />
                   </ListItem>
                   <Divider light />
-                  <ListItem button component={Link} to="/contacto">
+                  <ListItem button component={Link} to="/portfolio2/contacto">
                     <ListItemIcon>
                       <InboxIcon color="" />
                     </ListItemIcon>
@@ -146,7 +146,7 @@ const Cajon = (props) => {
             open
           >
             <div>
-              <img className={classes.img} src={img} alt="" />
+              <img className={classes.img} src={img} alt="foto de perfil" />
 {/*               <div className={classes.toolbar} />
  */}              <div className={classes.listas} >
 
@@ -158,42 +158,42 @@ const Cajon = (props) => {
                     <ListItemText primary="Sobre Mí" />
                   </ListItem>
                   <Divider light />
-                  <ListItem button component={Link} to="/experiencia">
+                  <ListItem button component={Link} to="/portfolio2/experiencia">
                     <ListItemIcon>
                       <BookIcon color="" />
                     </ListItemIcon>
                     <ListItemText primary="Experiencia" />
                   </ListItem>
                   <Divider light />
-                  <ListItem button component={Link} to="/estudios">
+                  <ListItem button component={Link} to="/portfolio2/estudios">
                     <ListItemIcon>
                       <LibraryBooksIcon color="" />
                     </ListItemIcon>
                     <ListItemText primary="Estudios" />
                   </ListItem>
                   <Divider light />
-                  <ListItem button component={Link} to="/potencial-adquirido">
+                  <ListItem button component={Link} to="/portfolio2/potencial-adquirido">
                     <ListItemIcon>
                       <StarOutlineIcon color="" />
                     </ListItemIcon>
                     <ListItemText primary="Potencial Adquirido" />
                   </ListItem>
                   <Divider light />
-                  <ListItem button component={Link} to="/contenido">
+                  <ListItem button component={Link} to="/portfolio2/contenido">
                     <ListItemIcon>
                       <PermMediaIcon color="" />
                     </ListItemIcon>
                     <ListItemText primary="Contenido" />
                   </ListItem>
                   <Divider light />
-                  <ListItem button component={Link} to="/app">
+                  <ListItem button component={Link} to="/portfolio2/app">
                     <ListItemIcon>
                       <AppsIcon color="" />
                     </ListItemIcon>
                     <ListItemText primary="App" />
                   </ListItem>
                   <Divider light />
-                  <ListItem button component={Link} to="/contacto">
+                  <ListItem button component={Link} to="/portfolio2/contacto">
                     <ListItemIcon>
                       <InboxIcon color="" />
                     </ListItemIcon>

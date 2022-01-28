@@ -14,7 +14,6 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
-      // marginRight: theme.spacing(1),
       marginTop: theme.spacing(1),
       marginRight: theme.spacing(1)
     },

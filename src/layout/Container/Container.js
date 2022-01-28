@@ -44,20 +44,20 @@ const Container = () => {
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <Switch>
-          <Route path="/portfolio2" render={() => <SobreMi info={info} />} />
-          <Route path="/experiencia" render={() => <Experiencia info={info.experiencia} />} />
-          <Route path="/estudios" render={() => <Estudios info={info.estudios} />} />
-          <Route path="/potencial-adquirido" render={() => <Potencial info={info.potencial} />} />
-          <Route path="/contenido" render={() => <Contenido />} />
-          <Route path="/app" render={() => <App />} />
-          <Route path="/contacto" render={() => <Contact
+          
+          <Route path="/portfolio2/experiencia" render={() => <Experiencia info={info.experiencia} />} />
+          <Route path="/portfolio2/estudios" render={() => <Estudios info={info.estudios} />} />
+          <Route path="/portfolio2/potencial-adquirido" render={() => <Potencial info={info.potencial} />} />
+          <Route path="/portfolio2/contenido" render={() => <Contenido />} />
+          <Route path="/portfolio2/app" render={() => <App />} />
+          <Route path="/portfolio2/contacto" render={() => <Contact
             lin="https://www.linkedin.com/in/atilio-hernan-porfirio/"
             git="https://github.com/ProfileLearn"
             wpp="https://wa.me/541136260524"
             mail="mailto:hernanporfirio@gmail.com"
           />} />
-          <Route path="/" render={() => <SobreMi
-            info={info} />} />
+          <Route path="/portfolio2" render={() => <SobreMi info={info} />} />
+          {<Route path="/" render={() => <SobreMi info={info} />} />}
         </Switch>
       </main>
     </BrowserRouter>
