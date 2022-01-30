@@ -61,6 +61,60 @@ const Cajon = (props) => {
 
   const classes = useStyles();
 
+  const drawer = (
+    <List component="nav" aria-label="main">
+      <ListItem button component={Link} to="/portfolio2/">
+        <ListItemIcon>
+          <HomeIcon color="" />
+        </ListItemIcon>
+        <ListItemText primary="Sobre Mí" />
+      </ListItem>
+      <Divider light />
+      <ListItem button component={Link} to="/portfolio2/experiencia">
+        <ListItemIcon>
+          <BookIcon color="" />
+        </ListItemIcon>
+        <ListItemText primary="Experiencia" />
+      </ListItem>
+      <Divider light />
+      <ListItem button component={Link} to="/portfolio2/estudios">
+        <ListItemIcon>
+          <LibraryBooksIcon color="" />
+        </ListItemIcon>
+        <ListItemText primary="Estudios" />
+      </ListItem>
+      <Divider light />
+      <ListItem button component={Link} to="/portfolio2/potencial-adquirido">
+        <ListItemIcon>
+          <StarOutlineIcon color="" />
+        </ListItemIcon>
+        <ListItemText primary="Potencial Adquirido" />
+      </ListItem>
+      <Divider light />
+      <ListItem button component={Link} to="/portfolio2/contenido">
+        <ListItemIcon>
+          <PermMediaIcon color="" />
+        </ListItemIcon>
+        <ListItemText primary="Contenido" />
+      </ListItem>
+      <Divider light />
+      <ListItem button component={Link} to="/portfolio2/app">
+        <ListItemIcon>
+          <AppsIcon color="" />
+        </ListItemIcon>
+        <ListItemText primary="App" />
+      </ListItem>
+      <Divider light />
+      <ListItem button component={Link} to="/portfolio2/contacto">
+        <ListItemIcon>
+          <InboxIcon color="" />
+        </ListItemIcon>
+        <ListItemText primary="Contacto" />
+      </ListItem>
+      <Divider />
+    </List>
+  )
+
   return (
     <>
       <nav className={classes.drawer} aria-label="mailbox folders">
@@ -81,58 +135,8 @@ const Cajon = (props) => {
             <div>
               <div className={classes.toolbar} />
               <div className={classes.listas} >
-
-                <List component="nav" aria-label="main">
-                  <ListItem button component={Link} to="/portfolio2/">
-                    <ListItemIcon>
-                      <HomeIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="Sobre Mí" />
-                  </ListItem>
-                  <Divider light />
-                  <ListItem button component={Link} to="/portfolio2/experiencia">
-                    <ListItemIcon>
-                      <BookIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="Experiencia" />
-                  </ListItem>
-                  <Divider light />
-                  <ListItem button component={Link} to="/portfolio2/estudios">
-                    <ListItemIcon>
-                      <LibraryBooksIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="Estudios" />
-                  </ListItem>
-                  <Divider light />
-                  <ListItem button component={Link} to="/portfolio2/potencial-adquirido">
-                    <ListItemIcon>
-                      <StarOutlineIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="Potencial Adquirido" />
-                  </ListItem>
-                  <Divider light />
-                  <ListItem button component={Link} to="/portfolio2/contenido">
-                    <ListItemIcon>
-                      <PermMediaIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="Contenido" />
-                  </ListItem>
-                  <Divider light />
-                  <ListItem button component={Link} to="/portfolio2/app">
-                    <ListItemIcon>
-                      <AppsIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="App" />
-                  </ListItem>
-                  <Divider light />
-                  <ListItem button component={Link} to="/portfolio2/contacto">
-                    <ListItemIcon>
-                      <InboxIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="Contacto" />
-                  </ListItem>
-                  <Divider />
-                </List>
+                {drawer}
+                
               </div>
             </div>
           </Drawer>
@@ -150,56 +154,7 @@ const Cajon = (props) => {
 {/*               <div className={classes.toolbar} />
  */}              <div className={classes.listas} >
 
-                <List component="nav" aria-label="main">
-                  <ListItem button component={Link} to="/">
-                    <ListItemIcon>
-                      <HomeIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="Sobre Mí" />
-                  </ListItem>
-                  <Divider light />
-                  <ListItem button component={Link} to="/portfolio2/experiencia">
-                    <ListItemIcon>
-                      <BookIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="Experiencia" />
-                  </ListItem>
-                  <Divider light />
-                  <ListItem button component={Link} to="/portfolio2/estudios">
-                    <ListItemIcon>
-                      <LibraryBooksIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="Estudios" />
-                  </ListItem>
-                  <Divider light />
-                  <ListItem button component={Link} to="/portfolio2/potencial-adquirido">
-                    <ListItemIcon>
-                      <StarOutlineIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="Potencial Adquirido" />
-                  </ListItem>
-                  <Divider light />
-                  <ListItem button component={Link} to="/portfolio2/contenido">
-                    <ListItemIcon>
-                      <PermMediaIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="Contenido" />
-                  </ListItem>
-                  <Divider light />
-                  <ListItem button component={Link} to="/portfolio2/app">
-                    <ListItemIcon>
-                      <AppsIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="App" />
-                  </ListItem>
-                  <Divider light />
-                  <ListItem button component={Link} to="/portfolio2/contacto">
-                    <ListItemIcon>
-                      <InboxIcon color="" />
-                    </ListItemIcon>
-                    <ListItemText primary="Contacto" />
-                  </ListItem>
-                </List>
+                {drawer}
               </div>
             </div>
           </Drawer>
