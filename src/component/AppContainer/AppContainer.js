@@ -2,6 +2,7 @@ import React from 'react';
 import Display from '../Display/Display';
 import Controls from '../Controls/Controls';
 import styles from './appContainer.module.css'
+import clic from '../../media/metronomo.mp3'
 
 const words = ["ROJO", "VERDE", "AZUL", "AMARILLO", "NEGRO", "BLANCO"]
 const colors = ["red", "green", "blue", "yellow", "black"];
@@ -15,11 +16,13 @@ export default class AppContainer extends React.Component {
       color: "black",
       counter: 3,
       speed: 1000,
-      fullscreen: false
+      fullscreen: false,
+      clic: new Audio(clic)
     };
   }
 
   randomize = (words, colors) => {
+    
     const word = Math.floor(Math.random() * words.length);
     const color = Math.floor(Math.random() * colors.length);
     this.setState({
@@ -57,7 +60,9 @@ export default class AppContainer extends React.Component {
   }
 
   timer = (speed) => {
+    
     const intervalo = setInterval(() => {
+      
       if (this.state.play === false) {
         clearInterval(intervalo)
         this.setState({
@@ -65,7 +70,6 @@ export default class AppContainer extends React.Component {
           palabra: "COMIENZA",
           color: "black"
         })
-        return
       } else {
         if (this.state.counter < 4 && this.state.counter > 0) {
           this.setState({
@@ -76,7 +80,10 @@ export default class AppContainer extends React.Component {
         } else {
 
           this.randomize(words, colors)
+          
         }
+        
+        this.state.clic.play()
       }
     }, speed);
   }
