@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio2/static/css/main.9473c663.chunk.css",
-    "main.js": "/portfolio2/static/js/main.d1f9b5f2.chunk.js",
-    "main.js.map": "/portfolio2/static/js/main.d1f9b5f2.chunk.js.map",
+    "main.js": "/portfolio2/static/js/main.2f637575.chunk.js",
+    "main.js.map": "/portfolio2/static/js/main.2f637575.chunk.js.map",
     "runtime-main.js": "/portfolio2/static/js/runtime-main.29da8a3e.js",
     "runtime-main.js.map": "/portfolio2/static/js/runtime-main.29da8a3e.js.map",
     "static/js/2.f7dd9490.chunk.js": "/portfolio2/static/js/2.f7dd9490.chunk.js",
@@ -23,6 +23,7 @@
     "static/media/interescompuestobs4.b57b3ccc.gif": "/portfolio2/static/media/interescompuestobs4.b57b3ccc.gif",
     "static/media/linkedin.4506ebc8.png": "/portfolio2/static/media/linkedin.4506ebc8.png",
     "static/media/logo.e62093cf.png": "/portfolio2/static/media/logo.e62093cf.png",
+    "static/media/metronomo.906f3556.mp3": "/portfolio2/static/media/metronomo.906f3556.mp3",
     "static/media/perfil.7450cb62.jpeg": "/portfolio2/static/media/perfil.7450cb62.jpeg",
     "static/media/play.897ca2d2.png": "/portfolio2/static/media/play.897ca2d2.png",
     "static/media/slider.a399daf9.png": "/portfolio2/static/media/slider.a399daf9.png",
@@ -33,6 +34,6 @@
     "static/js/runtime-main.29da8a3e.js",
     "static/js/2.f7dd9490.chunk.js",
     "static/css/main.9473c663.chunk.css",
-    "static/js/main.d1f9b5f2.chunk.js"
+    "static/js/main.2f637575.chunk.js"
   ]
 }
