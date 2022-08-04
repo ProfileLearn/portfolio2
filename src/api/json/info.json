@@ -34,6 +34,19 @@
   ],
   "estudios": [
     [
+      "CoderHouse",
+      "Desarrollo Web",
+      [
+        "SASS",
+        "Bootstrap",
+        "Flexbox",
+        "Grid",
+        "GIT"
+      ],
+      "2022 - 2022",
+      "https://www.coderhouse.com/online/desarrollo-web-online"
+    ],
+    [
       "EducaciónIT",
       "React",["Desarrollo de aplicaciones web","React Router", "Components", "Hooks", "Redux"],
       "2021 - 2021","https://www.educacionit.com/"
