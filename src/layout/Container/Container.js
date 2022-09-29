@@ -42,7 +42,7 @@ const Container = () => {
   const preventRefresh = (e) => e.preventDefault();
 
   React.useEffect(() => {
-    window.addEventListener('onbeforeunload', (e) => preventRefresh)
+    window.addEventListener('onbeforeunload', preventRefresh)
 
     return () => {
       window.removeEventListener('onbeforeunload')
