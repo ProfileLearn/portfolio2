@@ -37,18 +37,18 @@ const Container = () => {
   const [mobileOpen, setMobileOpen] = React.useState(false);
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
-
-    
-
   };
 
+  const preventRefresh = (e) => e.preventDefault();
+
   React.useEffect(() => {
-    window.addEventListener('onbeforeunload', (e) => e.preventDefault())
+    window.addEventListener('onbeforeunload', (e) => preventRefresh)
 
     return () => {
       window.removeEventListener('onbeforeunload')
     }
   }, [])
+
   return (
     <BrowserRouter>
       <Header onClick={handleDrawerToggle} />
