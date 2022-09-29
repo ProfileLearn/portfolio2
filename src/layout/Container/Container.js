@@ -39,13 +39,15 @@ const Container = () => {
     setMobileOpen(!mobileOpen);
   };
 
-  const preventRefresh = (e) => e.preventDefault();
-
+  const preventRefresh = (e) => {
+    e.preventDefault();
+    alert("refresh")
+}
   React.useEffect(() => {
-    window.addEventListener('onload', preventRefresh)
+    window.addEventListener('load', preventRefresh)
 
     return () => {
-      window.removeEventListener('onload')
+      window.removeEventListener('load')
     }
   }, [])
 
