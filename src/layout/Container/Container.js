@@ -39,17 +39,6 @@ const Container = () => {
     setMobileOpen(!mobileOpen);
   };
 
-  const preventRefresh = (e) => {
-    e.preventDefault();
-    alert("refresh")
-}
-  React.useEffect(() => {
-    window.addEventListener('load', preventRefresh)
-
-    return () => {
-      window.removeEventListener('load')
-    }
-  }, [])
 
   return (
     <BrowserRouter>
