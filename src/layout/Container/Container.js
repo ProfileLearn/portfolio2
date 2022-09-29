@@ -15,6 +15,8 @@ import Contenido from '../../pages/Contenido/Contenido';
 
 
 
+
+
 const useStyles = makeStyles((theme) => ({
   content: {
     flexGrow: 1,
@@ -36,7 +38,17 @@ const Container = () => {
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
 
+    
+
   };
+
+  React.useEffect(() => {
+    window.addEventListener('onbeforeunload', (e) => e.preventDefault())
+
+    return () => {
+      window.removeEventListener('onbeforeunload')
+    }
+  }, [])
   return (
     <BrowserRouter>
       <Header onClick={handleDrawerToggle} />
