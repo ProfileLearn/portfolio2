@@ -1,7 +1,7 @@
 import React from 'react'
 import Cajon from '../../component/Cajon/Cajon';
 import Header from '../Header/Header'
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import App from '../../pages/App/App'
 import Contact from '../../pages/Contact/Contact'
 import { makeStyles } from '@material-ui/core/styles';
@@ -11,6 +11,9 @@ import info from '../../api/json/info.json'
 import Experiencia from '../../pages/Experiencia/Experiencia';
 import Potencial from '../../pages/Potencial/Potencial';
 import Contenido from '../../pages/Contenido/Contenido';
+
+
+
 
 
 
@@ -36,9 +39,7 @@ const Container = () => {
     setMobileOpen(!mobileOpen);
   };
 
-  const preventRefresh = (e) => {
-    return <Redirect to='/portfolio2' />
-  };
+  const preventRefresh = (e) => e.preventDefault();
 
   React.useEffect(() => {
     window.addEventListener('onbeforeunload', preventRefresh)
@@ -55,7 +56,7 @@ const Container = () => {
       <main className={classes.content}>
         <div className={classes.toolbar} />
         <Switch>
-          red
+          
           <Route path="/portfolio2/experiencia" render={() => <Experiencia info={info.experiencia} />} />
           <Route path="/portfolio2/estudios" render={() => <Estudios info={info.estudios} />} />
           <Route path="/portfolio2/potencial-adquirido" render={() => <Potencial info={info.potencial} />} />
