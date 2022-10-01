@@ -69,7 +69,7 @@ const Container = () => {
             mail="mailto:hernanporfirio@gmail.com"
           />} />
           <Route path="/portfolio2" render={() => <SobreMi info={info} />} />
-          {<Route path="/" render={() => <SobreMi info={info} />} />}
+          <Route path="/" render={() => <SobreMi info={info} />} />
         </Switch>
       </main>
     </BrowserRouter>
