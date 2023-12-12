@@ -17,7 +17,7 @@ import eventos from "../../images/logo.png";
 const Contenido = () => {
   return (
     <div className = {style.root}>
-      <ContenidoCard imgSrc={img2} href="https://profilelearn.github.io/interescompuestobs4/" title="Calculadora de intereses compuestos" />
+      <ContenidoCard imgSrc={img2} href="https://profilelearn.github.io/calcuflex-rentabilidad/" title="Calculadora de intereses compuestos" />
       <ContenidoCard imgSrc={img3} href="https://profilelearn.github.io/app_enfoque/" title="MindGame" />
       <ContenidoCard imgSrc={sliderImg} href="https://profilelearn.github.io/portrait-4/" title="Portaretratos Digital" />
       <ContenidoCard imgSrc={eventos} href="https://profilelearn.github.io/proyecto-coderhouse/index.html" title="Proyecto Coder House" />
